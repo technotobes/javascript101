@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="taskDiv">
+            <h3>Enter Task</h3>
+            <input type="text" placeholder="Complete this assignment" id="taskTextBox" required/>
+            
+            <button id="btnAdd">Add</button>
+        </div>
+
+
+        <div id="pendingDiv">
+            <h3>Pending Tasks</h3>
+            <div class="container">
+                <ul class="draggable" draggable= "true" id="pendingTasks"></ul>
+            </div>
+        </div>
+
+
+        <div id="completedDiv">
+            <h3>Completed Tasks</h3>
+            <div class="container">
+                <ul class="draggable" draggable= "true" id="completedTasks"></ul>
+            </div>
+        </div>
+        <script src="/javascriptAssignments/todoList/app.js"></script>
+    </body>
+</html>

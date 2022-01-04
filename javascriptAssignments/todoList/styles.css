@@ -1,0 +1,85 @@
+#taskDiv {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+}
+
+#taskDiv h3 {
+    font-size: smaller;
+    color: grey
+    
+}
+
+#taskDiv input {
+    margin:0 20px;
+    width: 35vw;
+    
+}
+
+#taskDiv button {
+
+    background-color: rgb(80, 178, 235);
+    color: white;
+    padding: 3.2px 20px ;
+    border:none
+    
+    
+}
+
+#pendingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: smaller;
+    margin-top: 30px;
+    
+}
+
+#completedDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: smaller;
+}
+
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+li {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(80, 178, 235);
+    width: 70vw;
+    padding: 15px;
+    margin:3px;
+    
+}
+
+li input{
+    background-color: hotpink;
+}
+
+li button {
+    background-color: rgb(80, 178, 235);
+    border:none;
+    color:rgb(209, 209, 209)
+}
+
+.draggable.dragging {
+    opacity: .5;
+}
