@@ -53,6 +53,7 @@ btnAdd.addEventListener("click", function () {
 
   let checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
+  checkBox.setAttribute("class", "checkmark");
 
   let taskLi = document.createElement("li");
 
@@ -85,4 +86,11 @@ btnAdd.addEventListener("click", function () {
   taskLi.appendChild(checkBox);
   taskLi.appendChild(labelItem);
   taskLi.appendChild(removeBtn);
+});
+
+taskTextBox.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    btnAdd.click();
+  }
 });

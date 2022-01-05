@@ -1,5 +1,5 @@
 .container {
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     margin-top: 1rem;
 }
@@ -81,9 +81,6 @@ li {
     
 }
 
-li input{
-    background-color: hotpink;
-}
 
 li button {
     background-color: rgb(80, 178, 235);
@@ -93,4 +90,14 @@ li button {
 
 .draggable.dragging {
     opacity: .5;
+}
+
+li .checkmark {
+    height: 25px;
+    width: 25px;
+  }
+
+p {
+    font-size: 2vw;
+    font-weight: 500;
 }
