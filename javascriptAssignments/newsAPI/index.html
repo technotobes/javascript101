@@ -1,27 +1,22 @@
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">View Sources</h3>
+      <select id="sourceSelect"></select>
+      <div class="divider"></div>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div>
-            <h3>View Sources</h3>
-            <select id = "sourceSelect">
-                <option>- View All -</option>
+      <div class="news">
+        <ul id="sourceUL"></ul>
 
-            </select>    
-        </div>
+        <ul id="newsUL"></ul>
+      </div>
+    </div>
 
-        <div>
-            <ul id="sourceUL"></ul>
-        </div>
-        
-        <div>
-            <ul id="newsUL"></ul>
-        </div>
-
-        <script src="sources.js"></script>
-        <script src="news.js"></script>
-        <script src="app.js"></script>
-    </body>
+    <script src="sources.js"></script>
+    <script src="news.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -5,52 +5,34 @@ const sourceSelect = document.getElementById("sourceSelect");
 let articles = news.articles;
 let sourcesItems = sources.sources;
 
-const articlesID = articles.map((article) => article.source.id);
-const sourcesID = sourcesItems.map((source) => source.id);
+const articlesName = articles.map((article) => article.source.name);
+const sourcesName = sourcesItems.map((source) => source.name);
 
-console.log(articlesID);
-console.log(sourcesID);
+// console.log(articlesName);
+// console.log(sourcesName);
 
-const filteredID = sourcesID.filter((id) => articlesID.includes(id));
+const filteredNames = sourcesName.filter((name) => articlesName.includes(name));
 
-console.log(filteredID);
+// console.log(filteredNames);
 
-displayNews(articles);
-
-function addSourceNameToDropBox(idToDisplay) {
-  const idItems = idToDisplay.map(function (sourceID) {
-    return `<option>${sourceID.name}</option>`;
-  });
-  for (index = 0; index < idItems.length; index++) {
-    sourceSelect.innerHTML = idItems;
-  }
-}
-
-addSourceNameToDropBox(sourcesItems);
-
-function displaySources(sourcesToDisplay) {
-  const sourceItem = sourcesToDisplay.map(function (source) {
-    return `<li>
-    <b>${source.name}</b>
-    <p>${source.description}</p>
-    <a href="${source.url}">${source.url}</a><br />
-  </li><br />`;
-  });
-
-  sourceUL.innerHTML = sourceItem.join("");
+let fName = "";
+for (let i = 0; i < filteredNames.length; i++) {
+  fName += `<option>${filteredNames[i]}</option>`;
+  sourceSelect.innerHTML = fName;
 }
 
 function displayNews(newsToDisplay) {
   const newsItem = newsToDisplay.map((article) => {
     return `<li>
-      <h2>${article.title}<h2>
-      <h3>${article.author}</h3>
+    <img src="${article.urlToImage}" />
+      <h2>${article.title}</h2>
       <p>${article.description}<p>
-      <a href="${article.url}">${article.url}<a><br />
-      <img src="${article.urlToImage}" />
-      <p>${article.publishedAt}</p>
-      </li>`;
+      <h3>By ${article.author} | 
+      <a href="${article.url}">Source<a> | ${article.publishedAt}</h3>
+      </li><hr />`;
   });
 
   newsUL.innerHTML = newsItem.join("");
 }
+
+displayNews(articles);
