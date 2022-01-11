@@ -1,0 +1,9 @@
+#movieUL {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:left;
+}
+
+#movieUL img{
+    width: 10%;
+}

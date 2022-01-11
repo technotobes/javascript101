@@ -8,9 +8,6 @@ let sourcesItems = sources.sources;
 const articlesName = articles.map((article) => article.source.name);
 const sourcesName = sourcesItems.map((source) => source.name);
 
-// console.log(articlesName);
-// console.log(sourcesName);
-
 const filteredNames = sourcesName.filter((name) => articlesName.includes(name));
 
 // console.log(filteredNames);
