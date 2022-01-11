@@ -13,7 +13,7 @@ function displayPosterList() {
     let movieItems = result.Search;
 
     let movies = movieItems.map(function (movie) {
-      return `  <a onclick="getMovieIMDBID(${movie.imdbID})">${movie.Title}</a> 
+      return `  <a onclick="getMovieIMDBID('${movie.imdbID}')">${movie.Title}</a> 
                 <img src="${movie.Poster}">
 
               `;
