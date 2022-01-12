@@ -31,11 +31,11 @@ function getMovieIMDBID(movieID) {
   let movieInfo = new XMLHttpRequest();
   movieInfo.addEventListener("load", function () {
     let movieInfoParsed = JSON.parse(this.responseText);
-    let movieInfoItems = movieInfoParsed.map(function (data) {
-      return `<h1>${data.Title}</h1>`;
-    });
-    movieInfoContainer.innerHTML = movieInfoItems;
+    
+     movieInfoContainer.innerHTML = `<h1>${movieInfoParsed.Title}</h1>`;
+    
   });
+  
   movieInfo.open(
     "GET",
     `https://www.omdbapi.com/?i=${movieID}&apikey=564727fa`

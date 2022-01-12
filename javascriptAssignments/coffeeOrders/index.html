@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id= "orderContainer">
+
+        <div id="newOrderContainer">
+            <h2>New Order</h2>
+            
+            <input type="text" id=emailAddressTextBox placeholder="Email Address">
+            <input type="text" id=drinkTextBox placeholder="Enter Drink">
+            <input type="text" id=sizeTextBox placeholder="Enter Size">
+            <input type="text" id=priceTextBox placeholder="Price">
+            <button id="submitOrderBtn">Submit Order</button>
+            
+        </div>
+    
+        <div id="searchOrderContainer">
+            <h2>Search Orders</h2>
+            <input type="text" id=searchOrderTextBox placeholder="Email Address">
+            <button id="searchEmailBtn">Search</button>
+            <div id="searchedOrderContainer"></div>
+        </div> 
+    </div>
+
+
+    <div id="currentOrderContainer">
+        <h2>Current Orders</h2>
+        <ul id="ordersUL"></ul>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

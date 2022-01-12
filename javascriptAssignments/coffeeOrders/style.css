@@ -1,0 +1,76 @@
+#orderContainer {
+    display:flex;
+    background-color: rgba(119, 194, 255, 0.884);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+}
+
+
+#newOrderContainer {
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#searchOrderContainer {
+    padding:10px;
+}
+
+#searchedOrderContainer {
+    color:white;
+    background-color: rgba(102, 183, 250, 0.884);
+    padding:10px;
+    list-style: none;
+}
+
+#orderContainer h2 {
+    color:rgb(255, 255, 255)
+}
+
+#formContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+#orderContainer input {
+    width: 30vw;
+    border: none;
+    margin: 2px;
+}
+
+#orderContainer button {
+    width: 15vw;
+    background-color: rgba(31, 151, 250, 0.884);
+    border:none;
+    padding: 10px;
+    color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+#currentOrderContainer {
+    background-color: rgba(102, 183, 250, 0.884);
+    padding: 3px;
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+#ordersUL {
+    list-style: none;
+    padding:0;
+
+}
+
+#ordersUL li {
+    background-color: rgba(31, 151, 250, 0.884);
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+   
+    
+
+}
