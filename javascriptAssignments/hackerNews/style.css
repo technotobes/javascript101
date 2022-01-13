@@ -1,0 +1,14 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    padding: 10px;
+}
+
+#newsOL li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#newsOL a {
+    color:black;
+    text-decoration: none;
+}
