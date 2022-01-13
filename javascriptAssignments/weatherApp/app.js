@@ -59,12 +59,14 @@ async function getWeatherInfo() {
                                                 <p>Feels Like: ${tempToF(result.main.feels_like)} °F</p>
                                                 <p>Pressure: ${result.main.pressure} "Hg</p>
                                                 <p>Humidity: ${result.main.humidity} %</p>
-                                                <button onclick="displayDegreesC()">°C</button>
+                                                 
                                                 
     
     `;
 }
 
+// button click to toggle display in F and C
+/* <button onclick="displayDegreesC()">°C</button> */
 
 function tempToF(kelvin) {
 
